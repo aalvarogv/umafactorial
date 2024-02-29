@@ -1,0 +1,88 @@
+# Clonar un repositorio de GitHub a mi ordenador.
+1. git clone https://github.com/aalvarogv/umafactorial
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+3. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+3. git commit -m "implementacion inicial"
+	git status
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+4. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+4. git commit -m "refactorizacion"
+	git status
+# Enviar/empujar commits locales de la rama 'main' de mi repositorio local al repositorio de GitHub con el alias 'origin'.
+5. git push origin main
+# Crear una nueva rama 'recursivo' y además se cambia a ella en el mismo tiempo.
+5. git checkout -b recursivo
+	git status
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+7. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+7. git commit -m "implementacion recursiva"
+	git status
+# Enviar/empujar commits locales de la rama 'recursivo' de mi repositorio local al repositorio de GitHub con el alias 'origin'.
+7. git push origin recursivo
+# Cambiar a la rama 'main'.
+8. git checkout main
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+10. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+10. git commit -m "correccion numeros negativos"
+	git status
+# Enviar/empujar commits locales de la rama 'main' de mi repositorio local al repositorio de GitHub con el alias 'origin'.
+10. git push origin main
+# Cambiar a la rama 'recursivo'.
+11. git checkout recursivo
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+11. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+11. git commit -m "optimizacion"
+	git status
+# Cambiar a la rama 'main'.
+12. git checkout main
+# Fusionar los cambios de una rama en otra rama. En este caso, se fusionan los cambios de la rama 'recursivo' en la rama en la que estamos, la rama 'main'.
+12. git merge recursivo
+	gitk --all
+# Crear una nueva rama 'refacIO' y además se cambia a ella en el mismo tiempo.
+13. git checkout -b refacIO
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+14. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+14. git commit -m "refactorizacion de metodo de entrada"
+	git status
+# Guarda temporalmente los cambios locales antes de ser confirmados en un commit.
+15. git stash
+# Cambiar a la rama 'main'.
+15. git checkout main
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+16. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+16. git commit -m "cambio de long a BigInteger"
+	git status
+# Enviar/empujar commits locales de la rama 'main' de mi repositorio local al repositorio de GitHub con el alias 'origin'.
+16. git push origin main
+# Cambiar a la rama 'refacIO'.
+16. git checkout refacIO
+# Volver al cambio que se guardó en el stash.
+16. git stash pop
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+16. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+16. git commit -m "refactorizacion de metodo de salida"
+	git status
+# Cambiar a la rama 'main'.
+17. git checkout main
+# Fusionar los cambios de una rama en otra rama. En este caso, se fusionan los cambios de la rama 'refacIO' en la rama en la que estamos, la rama 'main'.
+17. git merge refacIO
+# Agregar cambios específicos en el fichero 'factorial.java' al 'staging area'.
+19. git add factorial.java
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+19. git commit -m "Mezcla de la rama refacIO"
+# Enviar/empujar commits locales de la rama 'main' de mi repositorio local al repositorio de GitHub con el alias 'origin'.
+19. git push origin main
+# Agregar cambios específicos en el fichero 'comandos-git.txt' al 'staging area'.
+21. git add comandos-git.txt
+# Crear un commit con un mensaje descriptivo asociado. Esto guarda los cambios del 'staging area' permanentemente en el historial de versiones.
+21. git commit -m "Adicion de historial de linea de comandos"
+# Enviar todas las ramas locales al repositorio de GitHub llamado origin.
+22. git push --all origin
